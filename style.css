@@ -287,38 +287,45 @@ body {
     margin-left: 20px;
 }
 
+/* Ensuring the progress bar spans are initialized correctly */
 .Technical-bars .bar .progress-line span {
     display: block;
     height: 100%;
     background-color: #0ef;
     border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+    width: 0; /* Start with zero width */
+    animation: fillProgress 1s cubic-bezier(1, 0, 0, 1) forwards; /* Animate width */
 }
 
+/* Individual progress line widths */
 .progress-line-python {
     width: 80%;
+    background-color: rgb(205, 255, 77);
 }
 
 .progress-line-C {
     width: 70%;
+    background-color: rgb(21, 146, 255);
 }
 
 .progress-line-Java {
     width: 50%;
+    background-color: rgb(255, 27, 27);
 }
 
 .progress-line-html {
     width: 70%;
+    background-color: rgb(255, 115, 0);
 }
 
 .progress-line-nodejs {
     width: 70%;
+    background-color: rgb(55, 126, 164);
 }
 
 .progress-line-react {
     width: 50%;
+    background-color: #0ef;
 }
 
 @keyframes animate {
