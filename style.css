@@ -313,12 +313,12 @@ body {
     width: 70%;
 }
 
-.progress-line-php {
-    width: 50%;
+.progress-line-nodejs {
+    width: 70%;
 }
 
 .progress-line-react {
-    width: 60%;
+    width: 50%;
 }
 
 @keyframes animate {
