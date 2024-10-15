@@ -292,38 +292,48 @@ body {
     height: 100%;
     background-color: #0ef;
     border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+    width: 0; /* Start at 0 width */
+    animation: animateWidth 1s 1s cubic-bezier(1, 0, 0, 1) forwards; /* Animate width instead of scaleX */
 }
 
+/* Progress percentages for each bar */
 .progress-line-python {
     width: 80%;
+    background-color: rgb(205, 255, 77);
 }
 
 .progress-line-C {
     width: 70%;
+    background-color: rgb(21, 146, 255);
 }
 
 .progress-line-Java {
     width: 60%;
+    background-color: rgb(255, 27, 27);
 }
 
 .progress-line-html {
     width: 70%;
+    background-color: rgb(255, 115, 0);
 }
 
 .progress-line-nodejs {
     width: 60%;
+    background-color: rgb(55, 126, 164);
 }
 
 .progress-line-react {
     width: 50%;
+    background-color: #0ef;
 }
 
-@keyframes animate {
+/* Animate the width of progress bars */
+@keyframes animateWidth {
+    0% {
+        width: 0;
+    }
     100% {
-        transform: scaleX(1);
+        width: 100%; /* This will be overridden by the width in the individual classes */
     }
 }
 
