@@ -329,7 +329,7 @@ body {
 
 @keyframes showText {
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
