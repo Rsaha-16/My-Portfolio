@@ -293,47 +293,48 @@ body {
     background-color: #0ef;
     border-radius: 10px;
     width: 0; /* Start at 0 width */
-    animation: animateWidth 1s 1s cubic-bezier(1, 0, 0, 1) forwards; /* Animate width instead of scaleX */
+    animation: animateWidth 1s ease forwards; /* Animate width instead of scaleX */
 }
 
 /* Progress percentages for each bar */
 .progress-line-python {
-    width: 80%;
-    background-color: rgb(205, 255, 77);
+    width: 80%; /* Target width */
+    animation-delay: 1s; /* Delay for the animation */
 }
 
 .progress-line-C {
     width: 70%;
-    background-color: rgb(21, 146, 255);
+    animation-delay: 1s;
 }
 
 .progress-line-Java {
     width: 60%;
-    background-color: rgb(255, 27, 27);
+    animation-delay: 1s;
 }
 
 .progress-line-html {
     width: 70%;
-    background-color: rgb(255, 115, 0);
+    animation-delay: 1s;
 }
 
 .progress-line-nodejs {
     width: 60%;
-    background-color: rgb(55, 126, 164);
+    animation-delay: 1s;
 }
 
 .progress-line-react {
     width: 50%;
-    background-color: #0ef;
+    animation-delay: 1s;
 }
 
 /* Animate the width of progress bars */
 @keyframes animateWidth {
     0% {
-        width: 0;
+        width: 0; /* Start from 0 */
     }
     100% {
-        width: 100%; /* This will be overridden by the width in the individual classes */
+        /* The width will be defined by the class of each progress line */
+        width: inherit; /* Change this to inherit the target width */
     }
 }
 
@@ -342,6 +343,7 @@ body {
         opacity: 1;
     }
 }
+
 
 .github-section {
     display: flex;
