@@ -287,14 +287,14 @@ body {
     margin-left: 20px;
 }
 
+/* Ensuring the progress bar spans are initialized correctly */
 .Technical-bars .bar .progress-line span {
     display: block;
     height: 100%;
     background-color: #0ef;
     border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+    width: 0; /* Start with zero width */
+    animation: fillProgress 1s cubic-bezier(1, 0, 0, 1) forwards; /* Animate width */
 }
 
 .progress-line-python {
