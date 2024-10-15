@@ -306,7 +306,7 @@ body {
 }
 
 .progress-line-Java {
-    width: 50%;
+    width: 60%;
 }
 
 .progress-line-html {
@@ -314,11 +314,11 @@ body {
 }
 
 .progress-line-php {
-    width: 50%;
+    width: 60%;
 }
 
 .progress-line-react {
-    width: 60%;
+    width: 50%;
 }
 
 @keyframes animate {
