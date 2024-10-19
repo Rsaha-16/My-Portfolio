@@ -501,10 +501,10 @@ body {
 
 
 .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
     padding: 50px 10%;
     background-color: #02141d;
     color: #ededed;
@@ -580,7 +580,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 20px 20px 0; /* Adds a 10px gap between icons */
+    margin: 0 20px 20px 0;
 }
 
 .contact-icons .fb:hover {
@@ -610,6 +610,7 @@ body {
     background: #1DA1F2;
     box-shadow: 0 0 15px #0ef;
 }
+
 
 
 .contact-form form {
